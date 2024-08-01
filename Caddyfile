@@ -1,3 +1,4 @@
-:12169 {
-    redir https://karfly.github.io{uri}
+:80 {
+    root * /usr/share/caddy
+    file_server
 }
