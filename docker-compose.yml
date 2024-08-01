@@ -2,7 +2,9 @@ services:
   caddy:
     image: caddy:latest
     ports:
-      - "12169:12169"
+      - 12169:80
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile
+      # - ./Caddyfile.redirect:/etc/caddy/Caddyfile  # uncomment for redirect mode
+      - ./:/usr/share/caddy
     restart: unless-stopped

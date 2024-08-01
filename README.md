@@ -1,7 +1,7 @@
-# karfly.github.io
+# [karfly.github.io](https://karfly.github.io)
 
 ## How to deploy as TON Site
-1. Run Caddy redirect server:
+1. Run Caddy server:
 ```bash
 docker compose up --build -d
 ```
@@ -19,7 +19,9 @@ chmod +x tonutils-reverse-proxy
 
 4. Edit config:
 ```bash
-sudo vim config.json  # set "proxy_pass": "http://127.0.0.1:12169/"
+sudo vim config.json
+# set "proxy_pass": "http://127.0.0.1:12169/"
+# open "port" on your instance
 ```
 
 5. Run TON reverse-proxy (in daemon mode):
@@ -32,3 +34,6 @@ sudo vim config.json  # set "proxy_pass": "http://127.0.0.1:12169/"
 ps aux | grep tonutils-reverse-proxy
 kill -9 XXX
 ```
+
+## Redirect mode
+Uncomment line with `Caddyfile.redirect` in `docker-compose.yml` and restart
