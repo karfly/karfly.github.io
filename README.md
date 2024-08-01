@@ -37,3 +37,6 @@ kill -9 XXX
 
 ## Redirect mode
 Uncomment line with `Caddyfile.redirect` in `docker-compose.yml` and restart
+
+## Host TON Site on TON Storage
+You can use [tonbyte.com](https://tonbyte.com) provider. Follow [instructions](https://telegra.ph/Host-static-TON-site-in-TON-Storage-03-19) on their website.
