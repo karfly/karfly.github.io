@@ -18,10 +18,11 @@
             text-decoration: underline;
         }
         .container {
-            width: 800px;
+            max-width: 800px;
             margin: 0 auto;
             border: 1px solid #ccc;
             padding: 20px;
+            box-sizing: border-box;
         }
         hr {
             border: 0;
@@ -36,6 +37,10 @@
         }
         .project {
             margin-bottom: 20px;
+        }
+        .project ul {
+            margin-left: 10px;
+            padding-left: 20px;
         }
         .updated-date {
             font-style: italic;
@@ -55,7 +60,9 @@
         }
         .experience ul {
             list-style-type: disc;
-            margin-left: 20px;
+            margin-left: 10px;
+            padding-left: 20px;
+
         }
         .experience ul li {
             margin-bottom: 10px;
@@ -79,6 +86,17 @@
             text-align: center;
             margin-top: 10px;
         }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+                padding: 10px;
+            }
+            .profile img {
+                width: 100px;
+                height: 100px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -93,9 +111,7 @@
         </div>
         <p class="updated-date">Updated on 1 Aug 2024</p>
 
-        <p>Hi, I'm Karim and I love building things...</p>
-
-        <h1>My Projects</h1>
+        <p>Hi, I'm Karim and I love building things. Here're some of them:</p>
 
         <div class="project">
             <h2>⛽️ <a href="https://t.me/gaspump_bot">GasPump</a></h2>
@@ -104,6 +120,27 @@
                 <li>Fair memecoin launchpad on TON</li>
                 <li>$25M+ trading volume, 500K+ TXs, 250K users, 30K tokens created</li>
                 <li>Channel: <a href="https://t.me/gaspump_tv">@gaspump_tv</a></li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <h2>🎭 <a href="https://avatarify.ai">Avatarify AI</a></h2>
+            <p class="details">Launch 01 May 2020 • iOS, Android, Telegram</p>
+            <ul>
+                <li>Makes any photo sing with AI</li>
+                <li>14M+ users, $3M+ revenue, 1B+ views on socials, 50M+ videos generated</li>
+                <li>Media: <a href="https://techcrunch.com/2021/04/14/deep-fake-video-app-avatarify-which-process-on-phone-plans-digital-watermark-for-videos/?guccounter=1">TechCrunch</a>, <a href="https://www.washingtonpost.com/technology/2021/03/25/deepfake-video-apps/">The Washington Post</a></li>
+                <li>Telegram version: 🎭 <a href="https://t.me/avatarify_bot">@avatarify_bot</a></li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <h2>🤖 <a href="https://t.me/chagpt_karfly_bot">@chagpt_karfly_bot</a></h2>
+            <p class="details">5 Dec 2022 • Telegram</p>
+            <ul>
+                <li>Really good ChatGPT bot with <a href="https://github.com/father-bot/chatgpt_telegram_bot">open-sourced code</a></li>
+                <li>1.2M+ users, $10K MRR, 5M messages, solo founder project</li>
+                <li>(!) Sold on 6 Dec 2023</li>
             </ul>
         </div>
 
@@ -126,27 +163,6 @@
         </div>
 
         <div class="project">
-            <h2>🤖 <a href="https://t.me/chagpt_karfly_bot">@chagpt_karfly_bot</a></h2>
-            <p class="details">5 Dec 2022 • Telegram</p>
-            <ul>
-                <li>Really good ChatGPT bot with <a href="https://github.com/father-bot/chatgpt_telegram_bot">open-sourced code</a></li>
-                <li>1.2M+ users, $10K MRR, 5M messages, solo founder project</li>
-                <li>(!) Sold on 6 Dec 2023</li>
-            </ul>
-        </div>
-
-        <div class="project">
-            <h2>🎭 <a href="https://avatarify.ai">Avatarify AI</a></h2>
-            <p class="details">Launch 01 May 2020 • iOS, Android, Telegram</p>
-            <ul>
-                <li>Makes any photo sing with AI</li>
-                <li>14M+ users, $3M+ revenue, 1B+ views on socials, 50M+ videos generated</li>
-                <li>Media: <a href="https://techcrunch.com/2021/04/14/deep-fake-video-app-avatarify-which-process-on-phone-plans-digital-watermark-for-videos/?guccounter=1">TechCrunch</a>, <a href="https://www.washingtonpost.com/technology/2021/03/25/deepfake-video-apps/">The Washington Post</a></li>
-                <li>Telegram version: 🎭 <a href="https://t.me/avatarify_bot">@avatarify_bot</a></li>
-            </ul>
-        </div>
-
-        <div class="project">
             <h2>⭐️ <a href="https://t.me/subgram">@subgram</a></h2>
             <p class="details">Launch 13 Nov 2023 • Telegram, Web</p>
             <ul>
@@ -159,7 +175,6 @@
         <p>... actually there are many more, but you must be tired, right?</p>
 
         <div class="experience">
-            <h1>Experience</h1>
             <h2>Jobs:</h2>
             <ul>
                 <li>Yandex 2x: Worked on <a href="https://yandex.ru/project/deephd/">DeepHD</a> and <a href="https://meteum.ai/meteum/">Meteum</a></li>
