@@ -146,6 +146,24 @@
                 padding: 2px 8px;
             }
         }
+
+        .building-note {
+            background: #eafbea;
+        }
+        .building-note .dot {
+            display: inline-block;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #1fb141;
+            margin-right: 5px;
+            vertical-align: middle;
+            animation: pulse 1.6s ease-in-out infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.25; }
+        }
     </style>
 </head>
 <body>
@@ -165,9 +183,18 @@
             <a href="https://t.me/karim_iskakov" target="_blank">Telegram</a> |
             <a href="https://github.com/karfly" target="_blank">GitHub</a>
         </div>
-        <p class="updated-date">Updated on 13 Apr 2025</p>
+        <p class="updated-date">Updated on 25 Nov 2026</p>
 
         <p>Hi, I'm Karim and I love <b>building things</b>. Here're some of them:</p>
+
+        <div class="project">
+            <h3>⚙️ <a href="https://t.me/fabrika" target="_blank">@fabrika</a> <span class="acquisition-note building-note"><span class="dot"></span>Building now</span></h3>
+            <p class="details">15 Aug 2026 • Telegram</p>
+            <ul>
+                <li>Personal AI agents in Telegram</li>
+                <li>Channel: <a href="https://t.me/fabrika_channel" target="_blank">@fabrika_channel</a></li>
+            </ul>
+        </div>
 
         <div class="project">
             <h3>🎭 <a href="https://avatarify.ai" target="_blank">Avatarify AI</a></h3>
